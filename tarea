@@ -1,0 +1,110 @@
+//Multiplos de 7 
+
+
+for (let i = 12; i <=126; i++){
+	if (i % 7 ===0){
+  	   console.log(i + "Multiplo de 7);
+        }
+}
+
+// Encontrar el numero menor dentro de una cadena
+
+let arregloNumero = [8,7,9,4,6,2,1] // aqui definimos el arreglo
+
+// menor = 8
+// 8 <= 7 F
+// menor = 7
+//7 <= 9 V
+// menor = 7
+// 7 <= 4 F
+// menor= 4
+//4 <= 6 V
+//menor = 4
+// 4 <= 2 F
+// menor = 2
+//2 <= 1 F
+// menor = 1
+
+let numMenor = arregloNumero [0]
+
+	for(let i = 0; i < arregloNumero.length; i++) {
+
+     		if (!(numMenor <=arregloNumero [i])){
+
+			numMenor = arregloNumero [i]
+}	
+
+console.log("El número menor de la iteración", i , numMenor)
+
+}
+
+console.log( " El número menor es", numMenor)
+
+---------------------------------------------------
+//Ordenar de un arreglo de menor a mayor
+
+let unorderedNumbers = [3,8, 7, 4, 459, 3, 21]
+
+function sort(array) {
+   for (let i = 0; i < array.length; i++) {
+       for (let j = i + 1; j < array.length; j++ ) { 
+	     let actual = array[i]
+             let siguiente = array[j] 
+             if (actual > siguiente) {
+        // intercambiamos
+        array[i] = siguiente
+        array[j] = actual
+      }      if (actual <= siguiente) {
+        // no hacemos nada, continuamos
+             continue
+      }
+    }
+  }
+  return array
+}console.log(sort(unorderedNumbers))
+
+----------------------------------------------------------
+//Tablas de Multiplicar del 1 al 10
+
+var resultado
+
+ for(let multi = 1; multi <= 10; multi ++ ){
+    console.log("Tabla del ", multi)
+    for (let i = 1; i <= 10; i++ ){
+      resultado = multi * i
+      console.log( multi, 'x', i, '=', resultado )
+    }
+}
+17:53
+multi = 1 iteracion1
+  multi * (i = 1) = 1
+  multi * (i = 2) = 2
+  multi * (i = 3) = 3
+  .
+  .
+  multi * (i = 10) = 10
+multi = 2 iteracion2
+  multi * (i = 1) = 2
+  multi * (i = 2) = 4
+  .
+  .
+  .
+multi = 3
+  multi * (i = 1) = resultado
+
+------------------------------------------------------------
+
+// Factorial de un número
+
+let dato = 5
+let resultado = dato
+
+    for(let i=1; i<dato i ++){
+		resultado = resultado * i
+
+
+}
+console.log("El factorial de 5 es ", resultdo)
+
+
+
