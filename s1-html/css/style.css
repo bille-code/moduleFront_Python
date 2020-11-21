@@ -2,16 +2,19 @@
     background-color: blue;
     border: 1px solid black;
     border-radius: 5px;
+    height: 100px;
+   
     
 }
 
-.header nav {
-    background-color:orange;
+ .nav {
+    background-color: pink;
     border: 1px solid black;
     border-radius: 5px;
-    margin: 20px;
-
-    
+    width: 40%;
+    margin: 0 auto;
+ 
+        
 }
 
 aside{
